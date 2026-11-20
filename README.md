@@ -11,11 +11,11 @@ I built this flashcard website from scratch to help beginners learn basic coding
 
 -**3D Card Flip & Audio:** Click any flashcard, which flips followed by a high pitched sound effect generated using Web Audio API.
 
-- **Create & Delete Custom Cards:** Use the Creat Flashcard Button to add your own questions to any deck(I have added few personal notes which can be deleted by the user) and if you make a mistake, just delete that certain custom flashcard using the delete button. 
+-**Create & Delete Custom Cards:** Use the Creat Flashcard Button to add your own questions to any deck(I have added few personal notes which can be deleted by the user) and if you make a mistake, just delete that certain custom flashcard using the delete button. 
 
-Note: Originally formed flashcards stored under every deck and topic cannot be deleted. It is to maintain the original theme of the website.
+*(Note: Originally formed flashcards stored under every deck and topic cannot be deleted. It is to maintain the original theme of the website.)
 
-- **Random 5-Card Quiz:** Click the "Random 5-Card Quiz" button to test yourself with 5 shuffled questions pulled from across all decks.
+-**Random 5-Card Quiz:** Click the "Random 5-Card Quiz" button to test yourself with 5 shuffled questions pulled from across all decks.
 
 ## How to Use
 - **Live Site:** Open [Flashcards - Code for Beginners](https://saanchi-tanisha.github.io/FLASHCARDS-CODE-FOR-BEGINNERS/) directly in your browser.
