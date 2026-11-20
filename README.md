@@ -26,3 +26,6 @@ I built this flashcard website from scratch to help beginners learn basic coding
 - How to save custom flashcards in `localStorage` so they don't disappear when I refresh the page.
 - How to fix broken CSS and JS file paths when moving files around, and why `fetch()` needs Live Server instead of opening the HTML file directly.
 - How to use Git commands in the terminal to commit changes and host the site live on GitHub Pages.
+
+## AI declaration
+I wrote the site's HTML, CSS, and JS structure myself, and used AI to help brainstorm flashcard topics, troubleshoot errors (like broken file paths, localStorage merging, and Git push issues) and formulation of questions related to each topic to stay aligned with the ideas.
