@@ -18,7 +18,7 @@ I built this flashcard website from scratch to help beginners learn basic coding
 -**Random 5-Card Quiz:** Click the "Random 5-Card Quiz" button to test yourself with 5 shuffled questions pulled from across all decks.
 
 ## How to Use
-- **Live Site:** Open [Flashcards - Code for Beginners](https://saanchi-tanisha.github.io/FLASHCARDS-CODE-FOR-BEGINNERS/) directly in your browser.
+- **Live Site:** Open [Flashcards - Code for Beginners] directly in your browser.
 - **Run Locally:** Clone or download this repository, open the folder in VS Code, and launch `index.html` using the **OPEN ON Live Server** extension so `fetch("data.json")` loads properly.
 
 ## What I Learned
