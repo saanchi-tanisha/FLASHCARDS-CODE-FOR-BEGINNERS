@@ -94,6 +94,7 @@ function renderSetCards(set) {
     inner.addEventListener("click", (e) => {
       e.stopPropagation();
       cardContainer.classList.toggle("flipped");
+      playFlipsound();
     });
 
     cardContainer.appendChild(inner);
@@ -284,3 +285,22 @@ document.getElementById("random-quiz-btn").addEventListener("click", startRandom
     reshuffleBtn.addEventListener("click", startRandomQuiz);
     cardsSection.appendChild(reshuffleBtn);
   }
+
+function playFlipsound(){
+  const audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+  const oscillator=audioCtx.createOscillator();
+  const gainNode=audioCtx.createGain();
+
+  oscillator.type="triangle";
+  oscillator.frequency.setValueAtTime(520,audioCtx.currentTime);
+  oscillator.frequency.exponentialRampToValueAtTime(220,audioCtx.currentTime+0.07);
+  
+  gainNode.gain.setValueAtTime(0.15,audioCtx.currentTime);
+  gainNode.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.07);
+
+  oscillator.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
+
+  oscillator.start();
+  oscillator.stop(audioCtx.currentTime+0.07);
+}

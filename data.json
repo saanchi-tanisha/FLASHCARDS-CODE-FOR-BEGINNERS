@@ -159,10 +159,6 @@
     "description": "Connect your JavaScript logic to HTML elements to create interactive web apps.",
     "cards": [
       {
-        "front": "Why does placing a <script> tag in the <head> without 'defer' often cause null errors?",
-        "back": "Because the browser runs the JavaScript immediately before it has finished reading and creating the HTML elements in the <body>."
-      },
-      {
         "front": "What is the difference between innerText and innerHTML?",
         "back": "innerText inserts plain text safely, while innerHTML parses HTML tags—using innerHTML with untrusted user input can expose your site to security attacks."
       },
