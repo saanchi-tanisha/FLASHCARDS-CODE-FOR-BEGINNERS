@@ -292,8 +292,8 @@ function playFlipsound(){
   const gainNode=audioCtx.createGain();
 
   oscillator.type="triangle";
-  oscillator.frequency.setValueAtTime(520,audioCtx.currentTime);
-  oscillator.frequency.exponentialRampToValueAtTime(220,audioCtx.currentTime+0.07);
+  oscillator.frequency.setValueAtTime(880,audioCtx.currentTime);
+  oscillator.frequency.exponentialRampToValueAtTime(420,audioCtx.currentTime+0.07);
   
   gainNode.gain.setValueAtTime(0.15,audioCtx.currentTime);
   gainNode.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.07);
