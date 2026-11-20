@@ -11,7 +11,7 @@ I built this flashcard website from scratch to help beginners learn basic coding
 
 -**3D Card Flip & Audio:** Click any flashcard, which flips followed by a high pitched sound effect generated using Web Audio API.
 
--**Create & Delete Custom Cards:** Use the Creat Flashcard Button to add your own questions to any deck(I have added few personal notes which can be deleted by the user) and if you make a mistake, just delete that certain custom flashcard using the delete button. 
+-**Create & Delete Custom Cards:** Use the Creat Flashcard Button to add your own questions to any deck and if you don't wish to store them around, just remove that certain custom flashcard using the delete button. 
 
 *(Note: Originally formed flashcards stored under every deck and topic cannot be deleted. It is to maintain the original theme of the website.)
 
