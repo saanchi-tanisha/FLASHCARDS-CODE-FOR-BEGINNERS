@@ -245,7 +245,7 @@ main {
 @keyframes fadeTrail {
   0% {
     opacity: 0.85;
-    transform: translate(-100%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
   100% {
     opacity: 0;
@@ -274,7 +274,7 @@ a, button, .card, .set-card, select, textarea {
 }
 
 .custom-cursor.hovering {
-  width: 70px;
-  height: 60px;
+  width: 20px;
+  height: 20px;
   background: rgba(37, 99, 235, 0.15);
 }
