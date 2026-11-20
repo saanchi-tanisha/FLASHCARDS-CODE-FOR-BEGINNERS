@@ -1,0 +1,398 @@
+[
+  {
+    "id": "set1",
+    "title": "Programming Foundations & Logic",
+    "description": "Understand how computers store data, evaluate truth, and make decisions using core logic.",
+    "cards": [
+      {
+        "front": "What happens in computer memory when you declare a variable?",
+        "back": "The program reserves a labeled spot in RAM to store a value so you can read, update, or reuse it later by name."
+      },
+      {
+        "front": "Why does '10' + '5' equal '105' instead of 15 in most programming languages?",
+        "back": "Because values wrapped in quotes are Strings (text), so the + operator concatenates (joins) them together rather than doing math."
+      },
+      {
+        "front": "What is type coercion, and why can it cause unexpected bugs?",
+        "back": "It is when a language automatically converts one data type to another (like turning a number into a string), which can cause weird comparisons like '5' == 5 evaluating to true."
+      },
+      {
+        "front": "How do logical operators AND (&&) and OR (||) differ in an if-statement?",
+        "back": "AND (&&) requires every condition to be true to run, while OR (||) runs as long as at least one condition is true."
+      },
+      {
+        "front": "What is the modulo (%) operator used for in coding?",
+        "back": "It returns the remainder of a division problem—commonly used to check if a number is even or odd (num % 2 === 0)."
+      }
+    ]
+  },
+  {
+    "id": "set2",
+    "title": "Loops & Control Flow",
+    "description": "Master how programs repeat actions efficiently without writing duplicate code.",
+    "cards": [
+      {
+        "front": "What causes an infinite loop, and how does it affect your browser or program?",
+        "back": "It happens when a loop's exit condition never becomes false, causing the program to run forever and freeze the browser tab."
+      },
+      {
+        "front": "What is the difference between the 'break' and 'continue' keywords inside a loop?",
+        "back": "'break' exits the entire loop immediately, while 'continue' skips just the current iteration and jumps to the next cycle."
+      },
+      {
+        "front": "Why do arrays use zero-based indexing (starting at 0 instead of 1)?",
+        "back": "The index represents the offset distance from the very first item in memory—the first item is 0 steps away from the start."
+      },
+      {
+        "front": "What is a 'nested loop', and when would you use one?",
+        "back": "A loop placed inside another loop, commonly used to work with 2D grids, tables, or arrays inside arrays."
+      },
+      {
+        "front": "How does a 'for...of' loop (or Python 'for item in list') make code cleaner?",
+        "back": "It lets you directly access each item in a list without manually tracking index numbers like i = 0 or i++."
+      }
+    ]
+  },
+  {
+    "id": "set3",
+    "title": "Functions & Scope",
+    "description": "Learn how to package reusable code blocks and control where variables can be accessed.",
+    "cards": [
+      {
+        "front": "What is the difference between a function's parameters and arguments?",
+        "back": "Parameters are the placeholder variable names in the function definition; arguments are the actual values you pass in when calling it."
+      },
+      {
+        "front": "Why is returning a value from a function usually better than just printing it with console.log()?",
+        "back": "Returning sends the result back to your code so other functions can save or use it; console.log() only displays text for humans to read."
+      },
+      {
+        "front": "What is variable 'scope' in programming?",
+        "back": "The region of your code where a variable exists and can be accessed—variables created inside a function stay trapped inside that function."
+      },
+      {
+        "front": "Why should you avoid creating too many global variables?",
+        "back": "Any part of your program can accidentally overwrite a global variable, leading to hard-to-trace bugs as your project grows."
+      },
+      {
+        "front": "What is a 'pure function'?",
+        "back": "A function that always produces the exact same output for the same inputs and does not modify anything outside of itself."
+      }
+    ]
+  },
+  {
+    "id": "set4",
+    "title": "Data Structures Essentials",
+    "description": "Organize complex collections of information using arrays, objects, stacks, and queues.",
+    "cards": [
+      {
+        "front": "When should you store data in an Object (Key-Value) instead of an Array (List)?",
+        "back": "Use an Array when the order of items matters; use an Object when you want to look up properties by a descriptive name (like user.email)."
+      },
+      {
+        "front": "What is an 'Array of Objects', and why is it the backbone of most apps?",
+        "back": "A list where every item is a structured object—ideal for storing collections like a list of flashcard sets or user profiles."
+      },
+      {
+        "front": "How does a Stack data structure work (LIFO)?",
+        "back": "Last-In, First-Out—the most recently added item is the first one removed, just like a stack of plates or your browser's Back button."
+      },
+      {
+        "front": "How does a Queue data structure work (FIFO)?",
+        "back": "First-In, First-Out—items are processed in the exact order they arrived, just like a line at a ticket counter."
+      },
+      {
+        "front": "What does 'mutating' data mean, and why do developers watch out for it?",
+        "back": "Mutating means changing an existing array or object directly in memory rather than making a fresh copy, which can cause unintended side effects."
+      }
+    ]
+  },
+  {
+    "id": "set5",
+    "title": "Modern HTML & Accessibility",
+    "description": "Build meaningful webpage skeletons that work seamlessly for all users and search engines.",
+    "cards": [
+      {
+        "front": "What is the purpose of the <!DOCTYPE html> declaration at the top of an HTML file?",
+        "back": "It tells the browser to render the page using modern HTML5 standards instead of falling back into outdated compatibility modes."
+      },
+      {
+        "front": "Why should every tag include a descriptive 'alt' attribute?",
+        "back": "Screen readers read the alt text aloud to visually impaired users, and it displays on screen if the image fails to load."
+      },
+      {
+        "front": "What is the <meta name='viewport'> tag responsible for?",
+        "back": "It instructs mobile browsers to match the webpage's width to the device's screen width so text isn't zoomed out tiny."
+      }
+    ]
+  },
+  {
+    "id": "set6",
+    "title": "CSS Layouts & Styling",
+    "description": "Control spacing, alignment, responsiveness, and visual polish on the web.",
+    "cards": [
+      {
+        "front": "What does 'box-sizing: border-box;' fix in CSS?",
+        "back": "It forces an element's width and height to include its padding and border, preventing boxes from unexpectedly growing larger than set."
+      },
+      {
+        "front": "When should you use CSS Grid instead of Flexbox?",
+        "back": "Use Flexbox for 1-dimensional layouts (a single row or column); use CSS Grid for 2-dimensional layouts (rows and columns simultaneously)."
+      },
+      {
+        "front": "What is CSS Specificity, and why do some styles fail to apply?",
+        "back": "It is the scoring system browsers use to decide which CSS rule wins—IDs (#header) override classes (.card), which override element tags (div)."
+      },
+      {
+        "front": "What is the difference between 'rem' and 'px' units in CSS?",
+        "back": "'px' is a fixed pixel size, while 'rem' scales relative to the root font size—making your site respect users' browser accessibility settings."
+      },
+      {
+        "front": "How do CSS Media Queries enable responsive design?",
+        "back": "They apply specific CSS rules only when conditions are met, such as @media (max-width: 768px) for tablets and phones."
+      }
+    ]
+  },
+  {
+    "id": "set7",
+    "title": "JavaScript & The DOM",
+    "description": "Connect your JavaScript logic to HTML elements to create interactive web apps.",
+    "cards": [
+      {
+        "front": "Why does placing a <script> tag in the <head> without 'defer' often cause null errors?",
+        "back": "Because the browser runs the JavaScript immediately before it has finished reading and creating the HTML elements in the <body>."
+      },
+      {
+        "front": "What is the difference between innerText and innerHTML?",
+        "back": "innerText inserts plain text safely, while innerHTML parses HTML tags—using innerHTML with untrusted user input can expose your site to security attacks."
+      },
+      {
+        "front": "How does element.classList.toggle('flipped') work?",
+        "back": "It adds the 'flipped' CSS class if it is missing from the element, and removes it if it is already there—perfect for card flip animations."
+      },
+      {
+        "front": "What is 'Event Delegation' in JavaScript?",
+        "back": "Attaching a single event listener to a parent container instead of dozens of individual child buttons, saving memory and handling dynamically created items."
+      },
+      {
+        "front": "What does event.preventDefault() do on a form submission?",
+        "back": "It stops the browser's default behavior of refreshing the entire webpage when a form is submitted, letting JavaScript handle the data smoothly."
+}
+]
+},
+{
+"id": "set8",
+"title": "Asynchronous JS & APIs",
+"description": "Understand how websites fetch external data without freezing the user interface.",
+"cards": [
+{
+"front": "Why does JavaScript need asynchronous code for tasks like fetching data?",
+"back": "JavaScript runs on a single thread—if it waited synchronously for a slow network request, the entire webpage would freeze until it finished."
+},
+{
+"front": "What is a JavaScript 'Promise'?",
+"back": "An object representing the eventual completion (or failure) of an asynchronous operation, existing in one of three states: pending, fulfilled, or rejected."
+},
+{
+"front": "Why do you have to call response.json() after using fetch('data.json')?",
+"back": "fetch() returns a raw HTTP response stream first; .json() reads that stream and parses the text into usable JavaScript objects."
+},
+{
+"front": "How do 'async' and 'await' improve working with Promises?",
+"back": "They let you write asynchronous code that reads cleanly from top to bottom like normal code, avoiding messy chains of .then() callbacks."
+},
+{
+"front": "What do HTTP status codes 200, 404, and 500 tell you?",
+"back": "200 means the request succeeded; 404 means the requested file or route was not found; 500 means the server crashed or hit an internal error."
+}
+]
+},
+{
+"id": "set9",
+"title": "Browser Storage & Web Security",
+"description": "Save user progress locally and protect your web applications from common vulnerabilities.",
+"cards": [
+{
+"front": "Why must you use JSON.stringify() before saving an array or object into localStorage?",
+"back": "Because localStorage can only store plain strings—saving a raw object turns it into the useless text '[object Object]'."
+},
+{
+"front": "What is the difference between localStorage and sessionStorage?",
+"back": "localStorage keeps data saved even after the browser is closed, whereas sessionStorage wipes the data as soon as that browser tab is closed."
+},
+{
+"front": "What is CORS (Cross-Origin Resource Sharing), and why does it block local file fetches?",
+"back": "It is a browser security rule preventing websites from silently reading files from your computer's hard drive or unauthorized external domains."
+},
+{
+"front": "What is Cross-Site Scripting (XSS)?",
+"back": "A security vulnerability where an attacker injects malicious JavaScript into a webpage (often via unescaped form inputs) that runs in other users' browsers."
+},
+{
+"front": "Why should you never store secret API keys or passwords inside frontend JavaScript files?",
+"back": "Anyone visiting your website can open Browser DevTools, view your source files, and steal any keys written in frontend code."
+}
+]
+},
+{
+"id": "set10",
+"title": "Developer Workflow & Clean Code",
+"description": "Adopt professional debugging habits, version control practices, and readable code principles.",
+"cards": [
+{
+"front": "What is the standard three-step Git workflow to save your progress?",
+"back": "1. 'git add .' (stage changes), 2. 'git commit -m \"message\"' (save a snapshot), and 3. 'git push' (upload to GitHub)."
+},
+{
+"front": "What is a '.gitignore' file used for?",
+"back": "It tells Git which local files or folders (like API secret files, OS junk, or heavy dependency folders) should never be uploaded to GitHub."
+},
+{
+"front": "Why are descriptive variable names better than short ones like 'x' or 'data2'?",
+"back": "Code is read far more often than it is written—clear names like 'currentCardIndex' act as built-in documentation for your future self."
+},
+{
+"front": "What does 'separation of concerns' mean in web development?",
+"back": "Keeping structure (HTML), presentation (CSS), and behavior (JS) in separate, focused files so changing one doesn't break the others."
+},
+{
+"front": "When debugging a broken feature, why should you isolate the problem first?",
+"back": "Testing one small piece at a time (e.g., logging fetched data before rendering HTML) pinpoints the exact failure instead of guessing."
+}]},
+{
+    "id": "set11",
+    "title": "Modern JavaScript (ES6+)",
+    "description": "Write cleaner, shorter, and more readable JavaScript using modern syntax features.",
+    "cards": [
+      {
+        "front": "How do Template Literals (backticks ``) improve working with strings in JavaScript?",
+        "back": "They let you embed variables directly inside strings using ${variable} and write multi-line text without messy + concatenation."
+      },
+      {
+        "front": "What is Array or Object Destructuring?",
+        "back": "A shorthand syntax that unpacks values from arrays or properties from objects directly into distinct variables (e.g., const { title, cards } = set)."
+      },
+      {
+        "front": "What does the Spread Operator (...) do when working with arrays or objects?",
+        "back": "It expands an array or object into individual elements, making it easy to clone data or merge two arrays together without mutating the original."
+      },
+      {
+        "front": "How do Arrow Functions (() => {}) differ in syntax from traditional functions?",
+        "back": "They offer a shorter syntax and allow implicit returns—if the function is a single expression, you can omit the curly braces and the 'return' keyword."
+      },
+      {
+        "front": "What do the array methods .map() and .filter() have in common?",
+        "back": "Both loop through an array and return a brand-new array without modifying the original—.map() transforms every item, while .filter() keeps only items that pass a test."
+      }
+    ]
+  },
+  {
+    "id": "set12",
+    "title": "Problem Solving & Algorithms",
+    "description": "Learn how programmers break down tricky challenges and write efficient logic.",
+    "cards": [
+      {
+        "front": "What is Pseudocode, and why do experienced developers write it first?",
+        "back": "Writing out your program's step-by-step logic in plain English before touching real code, helping you solve the problem without worrying about syntax rules."
+      },
+      {
+        "front": "What are 'Edge Cases' in programming?",
+        "back": "Unusual or extreme inputs—like an empty flashcard array, a negative number, or special characters—that can crash code if you only tested normal inputs."
+      },
+      {
+        "front": "Why is Binary Search so much faster than Linear Search on a sorted list?",
+        "back": "Linear Search checks items one by one from start to finish, while Binary Search repeatedly cuts the remaining search area in half."
+      },
+      {
+        "front": "What does Big O Notation measure in computer science?",
+        "back": "How a piece of code's runtime or memory usage scales as the input size grows—for example, whether 10,000 items takes 10,000 steps or 100,000,000 steps."
+      },
+      {
+        "front": "What is Recursion in programming?",
+        "back": "When a function calls itself to solve smaller versions of the same problem until it reaches a stopping condition called a 'base case'."
+      }
+    ]
+  },
+  {
+    "id": "set13",
+    "title": "How the Internet & Web Work",
+    "description": "Understand what actually happens behind the scenes when a browser loads a website.",
+    "cards": [
+      {
+        "front": "What is DNS (Domain Name System), and why is it called the phonebook of the internet?",
+        "back": "It translates human-friendly domain names (like google.com) into the numerical IP addresses computers use to locate servers."
+      },
+      {
+        "front": "What is the difference between HTTP and HTTPS?",
+        "back": "HTTPS adds SSL/TLS encryption to HTTP, scrambling data sent between the browser and server so attackers on public Wi-Fi cannot read it."
+      },
+      {
+        "front": "What happens in the Client-Server model when you click a link?",
+        "back": "Your browser (the client) sends an HTTP request over the internet, and a remote computer (the server) responds with the HTML, CSS, JS, and data files."
+      },
+      {
+        "front": "What is the difference between a GET request and a POST request?",
+        "back": "GET asks a server to retrieve and send back data (like loading flashcards), while POST sends new data to a server to be created or saved (like submitting a signup form)."
+      },
+      {
+        "front": "What is Web Hosting, and how do free static hosts like GitHub Pages or Netlify work?",
+        "back": "Web hosting stores your website's files on an always-on server connected to the internet so anyone with the URL can visit your site."
+      }
+    ]
+  },
+  {
+    "id": "set14",
+    "title": "Backend & Databases Basics",
+    "description": "Explore how servers, databases, and authentication work behind the user interface.",
+    "cards": [
+      {
+        "front": "Why can't a frontend-only website share user-created flashcards across different devices?",
+        "back": "Because frontend storage like localStorage lives strictly inside one browser on one device—sharing data across users requires a central backend server and database."
+      },
+      {
+        "front": "What is the difference between SQL (Relational) and NoSQL (Document) databases?",
+        "back": "SQL databases store structured data in strict tables with rows and columns (like spreadsheets), while NoSQL databases store flexible JSON-like documents."
+      },
+      {
+        "front": "What does CRUD stand for in backend development?",
+        "back": "Create, Read, Update, and Delete—the four fundamental operations every database-driven application performs on data."
+      },
+      {
+        "front": "What is an Environment Variable (.env file)?",
+        "back": "A hidden configuration file kept on the server to store sensitive secrets like database passwords and API keys safely outside of your public code."
+      },
+      {
+        "front": "What is the difference between Authentication and Authorization?",
+        "back": "Authentication verifies who you are (logging in with a password), while Authorization checks what you are allowed to do (like editing only your own decks)."
+      }
+    ]
+  },
+  {
+    "id": "set15",
+    "title": "UI/UX & Interactive App Design",
+    "description": "Design intuitive, responsive interfaces that feel smooth and enjoyable to use.",
+    "cards": [
+      {
+        "front": "What is 'State' in an interactive web application?",
+        "back": "Any data that changes over time while a user interacts with your app—such as which set is selected, the current card index, and whether a card is flipped."
+      },
+      {
+        "front": "Why should you disable or loop the 'Previous' button when the user is on the first flashcard?",
+        "back": "Preventing invalid actions stops users from hitting out-of-bounds array errors (index -1) and gives clear visual feedback about where they are."
+      },
+      {
+        "front": "How does CSS 'transition' make UI interactions feel smoother?",
+        "back": "Instead of snapping abruptly from one style to another on hover or click, 'transition' animates the property change gradually over a set duration (e.g., 0.3s)."
+      },
+      {
+        "front": "Why is adding keyboard shortcuts (like Spacebar to flip and Arrow keys for Next/Prev) great UX?",
+        "back": "Power users can study much faster without moving their mouse, and it makes your web app feel like a polished native application."
+      },
+      {
+        "front": "What are 'Empty States' and 'Loading States' in UI design?",
+        "back": "Visual placeholders—like a 'Loading flashcards...' spinner or 'No cards found' message—that reassure users the app is working rather than broken."
+      }
+    ]
+  }
+]
+

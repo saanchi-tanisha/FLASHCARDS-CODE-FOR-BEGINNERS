@@ -1,0 +1,280 @@
+:root {
+  --primary: rgba(236, 217, 201, 0.308);
+  --secondary: #7d01f1;
+  --card-front: rgb(247, 225, 247);
+  --card-back: yellow;
+  --accent: black;
+  --text: green;
+  --hover: crimson ;
+  --help:navy;
+  --shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 25;
+  color: var(--text);
+  background: var(--primary);
+}
+
+header {
+  padding: 1rem;
+  text-align:center;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--help);
+}
+
+main {
+  padding: 1.5rem;
+}
+
+.sets-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.set-card {
+  background: var(--primary);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.set-card:hover {
+  transform: translateY(-1px);
+}
+
+.set-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.set-card p {
+  margin: 0;
+  color: var(--text);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid var(--secondary);
+}
+
+.card-front {
+  background: var(--card-front);
+}
+
+.card-back {
+  background: var(--card-back);
+  transform: rotateY(180deg);
+}
+
+.section-title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.back-btn {
+  margin-top: 2.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: var(--accent);
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.back-btn:hover {
+  background: var(--hover);
+}
+
+@media (max-width: 700px) {
+  .card {
+    height: 200px;
+  }
+
+  .sets-section {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.modal {
+  border: none;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  font-family: inherit;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+#create-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#create-card-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+#create-card-form select,
+#create-card-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #1f2937;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+}
+
+.delete-card-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: #000000;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.delete-card-btn:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+}
+
+.cursor-trail {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f903a7; 
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  animation: fadeTrail 0.6s ease-out forwards;
+}
+
+@keyframes fadeTrail {
+  0% {
+    opacity: 0.85;
+    transform: translate(-100%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+}
+
+body {
+  cursor: none; 
+}
+
+a, button, .card, .set-card, select, textarea {
+  cursor: none; 
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #0a2153;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.15s ease, height 0.15s ease, background 0.15s ease;
+  z-index: 10000;
+}
+
+.custom-cursor.hovering {
+  width: 70px;
+  height: 60px;
+  background: rgba(37, 99, 235, 0.15);
+}

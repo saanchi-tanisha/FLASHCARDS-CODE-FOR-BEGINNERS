@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flashcards</title>
+  </head>
+  <body>
+    <header>
+      <h1>Flashcards- CODE FOR BEGINNERS</h1>
+      <p>Browse sets and flip cards to reveal details.</p>
+    </header>
+    <main id="app"></main>
+<button id="open-create-modal" class="btn-primary">+ Create Flashcard</button><button id="random-quiz-btn" class="btn-secondary">🎲 Random 5-Card Quiz</button>
+
+
+<dialog id="create-modal" class="modal">
+  <form id="create-card-form">
+    <h2>Create a New Flashcard</h2>
+
+    <label for="set-select">Choose Set:</label>
+    <select id="set-select" required>
+      <option value="custom">My Custom Deck</option>
+    </select>
+
+    <label for="card-front">Question (Front):</label>
+    <textarea id="card-front" rows="3" placeholder="e.g., What does CSS stand for?" required></textarea>
+
+    <label for="card-back">Answer (Back):</label>
+    <textarea id="card-back" rows="3" placeholder="e.g., Cascading Style Sheets" required></textarea>
+
+    <div class="modal-actions">
+      <button type="button" id="close-create-modal" class="btn-secondary">Cancel</button>
+      <button type="submit" class="btn-primary">Save Card</button>
+    </div>
+  </form>
+</dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
